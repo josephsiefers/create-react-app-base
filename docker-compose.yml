@@ -4,7 +4,7 @@ services:
   react-app:
     container_name: react-app
     build: ./
-    image: josephsiefers/react-app
+    image: joineryhousing/react-app
     volumes:
       - ./:/home/node
     ports:
