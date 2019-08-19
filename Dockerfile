@@ -9,6 +9,9 @@ RUN yarn install --pure-lockfile
 
 FROM node:10.15.1-alpine as dev
 
+#necessary for syncing node_modules locally
+RUN apk add rsync
+
 WORKDIR /home/node
 
 VOLUME /home/node/node_modules
